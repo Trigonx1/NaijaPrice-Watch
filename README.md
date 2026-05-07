@@ -18,8 +18,9 @@ It transforms raw market data into analytical insights using a 4-stage ETL pipel
 ### Core Question
 > Can a minimum-wage Nigerian household afford basic nutrition?
 
-The analysis shows that in **50 out of 262 months**, food costs exceeded sustainable affordability levels.
-
+The analysis shows that in 50 out of 262 months, food costs exceeded 
+60% of Nigeria's minimum wage — the WFP threshold for a food security crisis.
+In 8 of those months, food alone exceeded a worker's entire monthly income.
 ---
 
 ## Key Findings
