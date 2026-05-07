@@ -42,9 +42,9 @@ In January 2023, a basic food basket cost â‚¦94,675 against a minimum wage of â‚
 ---
 ## Dashboard Preview
 
-![Executive Overview](page1_executive_overview.png)
-![Affordability Crisis](page2_affordability.png)
-![Commodity Deep Dive](page3_commodities.png)
+![Executive Overview](page1_executive_overview.png.png)
+![Affordability Crisis](page2_affordability.png.png)
+![Commodity Deep Dive](page3_commodities.png.png)
 
 
 > > Full interactive dashboard: open `dashboard/shop_watch_final_pp.pbix` in Power BI Desktop (Windows)
