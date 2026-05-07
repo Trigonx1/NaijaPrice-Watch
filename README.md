@@ -40,7 +40,19 @@ The analysis shows that in **50 out of 262 months**, food costs exceeded a signi
 In January 2023, a basic food basket cost ₦94,675 against a minimum wage of ₦30,000 — meaning food alone consumed **135% of monthly income**.
 
 ---
+## Dashboard Preview
 
+![Executive Overview]<img width="1164" height="659" alt="Screenshot 2026-05-07 121209" src="https://github.com/user-attachments/assets/c9c63f32-f28f-41cc-8a11-c7ffcbb42499" />
+
+![Affordability Crisis]<img width="1164" height="659" alt="Screenshot 2026-05-07 130458" src="https://github.com/user-attachments/assets/3954cfcb-e941-442a-a2f7-8464412398b0" />
+
+![Commodity Deep Dive]<img width="1169" height="660" alt="Screenshot 2026-05-07 130802" src="https://github.com/user-attachments/assets/b9803286-db96-456d-907c-f60d9d687c56" />
+
+
+> Full interactive dashboard: open `dashboard/shop_watch_final_pp.pbix` in Power BI Desktop (Windows)
+> PDF version (viewable on any device): `shop_watch_final_pp.pdf`
+>
+> ---
 ## Pipeline Architecture
 
 **1. Extract**
