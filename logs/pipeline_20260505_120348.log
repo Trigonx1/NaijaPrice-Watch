@@ -1,0 +1,65 @@
+2026-05-05 12:07:20,365 — INFO — Exchange rate extracted: 1 USD = 1,369.75 NGN (live API)
+2026-05-05 12:07:30,300 — INFO — Exchange rate extracted: 1369.752558
+2026-05-05 12:09:28,705 — INFO — World Bank CPI data extracted: 29 annual records (1996–2024)
+2026-05-05 12:09:48,640 — INFO — World Bank data extracted: 49 rows
+2026-05-05 12:11:23,066 — ERROR — World Bank API failed: name 'false' is not defined. Returning empty DataFrame.
+2026-05-05 12:11:30,655 — INFO — World Bank CPI data extracted: 29 annual records (1996–2024)
+2026-05-05 12:11:44,836 — INFO — World Bank CPI data extracted: 29 annual records (1996–2024)
+2026-05-05 12:12:19,366 — INFO — World Bank CPI data extracted: 29 annual records (1996–2024)
+2026-05-05 12:12:42,628 — INFO — World Bank CPI data extracted: 29 annual records (1996–2024)
+2026-05-05 12:14:13,786 — INFO — Food prices loaded: 87,325 rows from 'wfp_food_prices_nga.csv'
+2026-05-05 12:17:17,062 — INFO — Food data cleaned: 87,325 valid rows remain
+2026-05-05 12:17:27,643 — INFO — Food Data Cleaned
+2026-05-05 12:34:05,417 — INFO — Feature engineering complete — new columns: mom_change_pct, yoy_change_pct, rolling_3m_avg, inflation_severity
+2026-05-05 12:34:33,593 — INFO — Feature engineering complete — new columns: mom_change_pct, yoy_change_pct, rolling_3m_avg, inflation_severity
+2026-05-05 12:34:39,989 — INFO — Feature engineering complete — new columns: mom_change_pct, yoy_change_pct, rolling_3m_avg, inflation_severity
+2026-05-05 12:38:36,214 — INFO — Affordability layer built | 50 months where low-income basket > 60% of NMW
+2026-05-05 12:43:32,082 — INFO — Validating 'engineered_data': shape (5136, 7)
+2026-05-05 12:43:32,086 — WARNING — [engineered_data] Columns with nulls:
+mom_change_pct         43
+yoy_change_pct        509
+rolling_3m_avg         43
+inflation_severity    509
+2026-05-05 12:43:32,101 — INFO — Validation for 'engineered_data': PASSED
+2026-05-05 12:44:39,035 — INFO — Validating 'dataset': shape (5136, 7)
+2026-05-05 12:44:39,040 — WARNING — [dataset] Columns with nulls:
+mom_change_pct         43
+yoy_change_pct        509
+rolling_3m_avg         43
+inflation_severity    509
+2026-05-05 12:44:39,051 — INFO — Validation for 'dataset': PASSED
+2026-05-05 12:50:35,653 — INFO — Exported [food_prices] -> outputs\powerbi_food_prices.csv (487.0 KB)
+2026-05-05 12:50:35,654 — INFO — Exported [basket] -> outputs\powerbi_basket.csv (10.0 KB)
+2026-05-05 12:50:35,654 — INFO — Exported [inflation_annual] -> outputs\powerbi_inflation_wb.csv (0.7 KB)
+2026-05-05 12:51:08,470 — INFO — Aggregated to 5,136 monthly records | 43 commodities | 2002-01-01 -> 2026-04-01
+2026-05-05 13:01:05,206 — INFO — ============================================================
+2026-05-05 13:01:05,208 — INFO — NaijaPrice Watch pipeline STARTED
+2026-05-05 13:01:05,208 — INFO — ============================================================
+2026-05-05 13:01:05,209 — INFO — [1/4] EXTRACT
+2026-05-05 13:01:05,920 — INFO — Exchange rate extracted: 1369.752558
+2026-05-05 13:01:06,994 — INFO — World Bank CPI data extracted: 29 annual records (1996–2024)
+2026-05-05 13:01:07,372 — INFO — Food prices loaded: 87,325 rows from 'wfp_food_prices_nga.csv'
+2026-05-05 13:01:07,372 — INFO — [2/4] TRANSFORM
+2026-05-05 13:01:07,412 — INFO — Food Data Cleaned
+2026-05-05 13:01:07,478 — INFO — Aggregated to 5,136 monthly records | 43 commodities | 2002-01-01 -> 2026-04-01
+2026-05-05 13:01:07,502 — INFO — Feature engineering complete — new columns: mom_change_pct, yoy_change_pct, rolling_3m_avg, inflation_severity
+2026-05-05 13:01:07,510 — INFO — Affordability layer built | 50 months where low-income basket > 60% of NMW
+2026-05-05 13:01:07,512 — INFO — [3/4] VALIDATE
+2026-05-05 13:01:07,512 — INFO — Validating 'food_prices': shape (5136, 7)
+2026-05-05 13:01:07,512 — WARNING — [food_prices] Columns with nulls:
+mom_change_pct         43
+yoy_change_pct        509
+rolling_3m_avg         43
+inflation_severity    509
+2026-05-05 13:01:07,522 — INFO — Validation for 'food_prices': PASSED
+2026-05-05 13:01:07,522 — INFO — Validating 'basket': shape (262, 4)
+2026-05-05 13:01:07,533 — INFO — Validation for 'basket': PASSED
+2026-05-05 13:01:07,533 — INFO — [4/4] LOAD
+2026-05-05 13:01:07,578 — INFO — Exported [food_prices] -> outputs\powerbi_food_prices.csv (487.0 KB)
+2026-05-05 13:01:07,578 — INFO — Exported [basket] -> outputs\powerbi_basket.csv (10.0 KB)
+2026-05-05 13:01:07,578 — INFO — Exported [inflation_annual] -> outputs\powerbi_inflation_wb.csv (0.7 KB)
+2026-05-05 13:01:07,583 — INFO — Pipeline COMPLETED in 2.4 seconds
+2026-05-05 13:01:07,583 — INFO — Log saved to: logs\pipeline_20260505_120348.log
+2026-05-05 13:01:07,583 — INFO — Output [food_prices]: outputs\powerbi_food_prices.csv
+2026-05-05 13:01:07,583 — INFO — Output [basket]: outputs\powerbi_basket.csv
+2026-05-05 13:01:07,583 — INFO — Output [inflation_annual]: outputs\powerbi_inflation_wb.csv
